@@ -1,2 +1,6 @@
 <h1>Users#show</h1>
 <p>Find me in app/views/users/show.html.erb</p>
+
+<% Authorization::TYPES.each do |type| %>
+  <%= link_to type.titleize, new_authorization_path(type: type) %>
+<% end %>
