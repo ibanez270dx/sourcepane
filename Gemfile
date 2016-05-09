@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.0'                # Build JSON APIs with ease
 
 gem 'redis', '~> 3.0'                   # Use Redis adapter to run Action Cable
 gem 'bcrypt', '~> 3.1.7'                # Use ActiveModel has_secure_password
+gem 'oauth'                             # For both OAuth clients and servers
 
 #################################################
 # Environment-Specific
