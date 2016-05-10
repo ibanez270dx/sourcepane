@@ -2,5 +2,7 @@
 <p>Find me in app/views/authorizations/index.html.erb</p>
 
 <% Authorization::TYPES.each do |type| %>
-  <%= link_to type.titleize, new_authorization_path(type: type) %>
+  <% unless @authorizations.include?(type.downcase) %>
+    <%= link_to type.titleize, new_authorization_path(type: type) %>
+  <% end %>
 <% end %>

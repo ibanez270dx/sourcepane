@@ -2,6 +2,7 @@ class AuthorizationsController < ApplicationController
   before_action :require_user
 
   def index
+    @authorizations = current_user.authorizations.collect{ |x| x.type.downcase }
   end
 
   def new
