@@ -1,4 +1,4 @@
-class Github < Authorization
+class Github < Source
   def self.authorize!(current_user, params)
     # request access token from github
     response = Net::HTTP.post_form(

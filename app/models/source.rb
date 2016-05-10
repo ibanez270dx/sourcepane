@@ -1,4 +1,4 @@
-class Authorization < ApplicationRecord
+class Source < ApplicationRecord
   TYPES = %w[github twitter]
 
   belongs_to :user

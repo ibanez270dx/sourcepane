@@ -1,2 +1,2 @@
-class Twitter < Authorization
+class Twitter < Source
 end

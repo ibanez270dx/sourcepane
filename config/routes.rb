@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'authorizations', to: 'authorizations#index', as: :authorization
-  get 'authorizations/:type', to: 'authorizations#new', as: :new_authorization
-  delete 'authorizations/:type', to: 'authorizations#destroy'
-  get '/authorize', to: 'authorizations#create', as: :authorize
+  get 'sources', to: 'sources#index', as: :source
+  get 'sources/:type', to: 'sources#new', as: :new_source
+  delete 'sources/:type', to: 'sources#destroy'
+  get '/authorize', to: 'sources#create', as: :authorize
 
   get   '/login',  to: 'sessions#new',      as: :login
   post  '/login',  to: 'sessions#create',   as: :session
