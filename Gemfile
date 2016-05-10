@@ -37,7 +37,7 @@ gem 'oauth'                             # For both OAuth clients and servers
 #################################################
 
 group :development, :test do
-  gem 'byebug', platform: :mri          # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'pry-rails'                       # An IRB alternative and runtime developer console
 end
 
 group :development do
