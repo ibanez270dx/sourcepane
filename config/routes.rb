@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'channel/index', to: 'channel#index', as: :channels
-  get 'channel/show', to: 'channel#show', as: :channel
+  get 'channels', to: 'channel#index', as: :channels
+  get 'channel/:name', to: 'channel#show', as: :channel
 
   get 'sources', to: 'sources#index', as: :source
   get 'sources/:type', to: 'sources#new', as: :new_source
